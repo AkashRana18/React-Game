@@ -9,6 +9,12 @@ body {
   padding: 0;
   margin: 0;
 }
+.my-Heading {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  margin-bottom: 9rem;
+  text-align: center;
+}
 
 button {
   background: none;
@@ -24,6 +30,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 70vh;
 }
 
 .text-green {
@@ -130,12 +138,13 @@ button {
 
 .bg-balls {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
+  // right: 0;
+  // bottom: 0;
   min-width: 100%;
   z-index: -1;
+  transform: translate(-50%, -50%);
 
   &:before,
   &:after {
