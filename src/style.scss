@@ -8,12 +8,20 @@ body {
   color: #fff;
   padding: 0;
   margin: 0;
+  
 }
 .my-Heading {
   font-size: 2.5rem;
-  font-weight: lighter;
-  margin-bottom: 9rem;
+  font-weight: 500;
+  margin-bottom: 6rem;
   text-align: center;
+  &:hover {
+    color: $orange;
+    // give good code a chance to shine
+    transition: all 0.9s;
+
+
+  }
 }
 
 button {
