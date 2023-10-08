@@ -31,8 +31,4 @@ const Board = ({ square, handleSquareClick }) => {
   );
 };
 
-
 export default Board;
-
-
-  
