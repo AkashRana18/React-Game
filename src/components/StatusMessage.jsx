@@ -1,5 +1,8 @@
-const StatusMessage = ({ winner, isXNext, square }) => {
+const StatusMessage = ({ winner, gamingBoard }) => {
+  const { square, isXNext } = gamingBoard;
+
   const noMovesLeft = square.every(el => el !== null);
+
   const nextPlayer = `${isXNext ? 'X' : 'O'}`;
 
   const renderStatusMessage = () => {
@@ -26,7 +29,6 @@ const StatusMessage = ({ winner, isXNext, square }) => {
     if (!winner && !noMovesLeft) {
       return (
         <>
-          {' '}
           Next player is {''}
           <span className={isXNext ? 'text-green' : 'text-orange'}>
             {nextPlayer}
