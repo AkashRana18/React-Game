@@ -1,13 +1,13 @@
 const History = ({ history, moveTo, currentMove }) => {
   return (
-    // <> 
+    // <>
     <div className="history-wrapper">
       <ul className="history">
         {history.map((_, index) => (
           <li key={index}>
             <button
               type="button"
-              className={`btn-move ${ currentMove === index ? 'active' : '' } `}
+              className={`btn-move ${currentMove === index ? 'active' : ''} `}
               onClick={() => moveTo(index)}
             >
               {index === 0 ? 'New Game' : `Go to Move ${index}`}
@@ -20,4 +20,3 @@ const History = ({ history, moveTo, currentMove }) => {
 };
 
 export default History;
-
