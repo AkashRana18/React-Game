@@ -9,4 +9,4 @@ Currently, two official plugins are available:
 
  ***LIVE DEMO Of the Applicaton***
  
- * [Click Here](https://gamewithreact.surge.sh/) *
+ * [Click Here](https://gamewithreact.surge.sh/) 
